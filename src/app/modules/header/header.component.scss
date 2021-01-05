@@ -6,10 +6,20 @@
     -ms-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
-    font-size: 15px;
+    font-size: 16px;
     padding: 10px 25px;
+    &:hover {
+      text-decoration: underline;
+    }
 } 
 
 .navbar-brand {
   color: #ffffff;
+}
+
+nav.navbar.navbar-expand-md.fixed-top.active {
+  background-color: #ffffff;
+  a {
+    color: #202831;
+  }
 }

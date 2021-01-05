@@ -1,3 +1,4 @@
+import { HostListener } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  scrolled = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(event: Event) {
+    console.log(window.scrollY);
+    this.scrolled = window.scrollY > 50;
   }
 
 }
