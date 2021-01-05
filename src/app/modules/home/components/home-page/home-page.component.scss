@@ -1,0 +1,123 @@
+.activate-counting{  }	
+.animated { visibility: visible !important; }
+
+#home-page{
+
+     
+	.front-section, .greetings-section, .accomplishments-section, .clients-section {
+		visibility: hidden;
+	}
+
+	.front-section{
+		background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.40)),url("../../../../../assets/home-page/front-page.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 100vh;
+		height: 100vh;
+		position: relative;
+		.content{
+			visibility: hidden;
+			position: relative;
+			display: inline-block;
+			.zip-search-area {
+				display: flex;
+				justify-content: center;
+				.flex-flow-row-wrap {
+					flex-flow: row wrap;
+					display: flex;
+					  .input-icon-wrap {
+					    display: flex;
+					    border: 1px solid #ccc;
+					    border-radius: 3px;
+					    background-color: #fff;
+					    padding: 0 10px;
+						.input-icon--xs {
+							top: 10px;
+							padding: 0 10px;
+							position: relative;
+							i {
+								font-size: 24px;
+								color: #545E6B;
+								font-weight: bold;
+							}
+						}
+						.input-icon-copy--xs {
+						  display: flex;
+						  align-items: center;
+						  white-space: nowrap;
+						  color: #545E6B;
+
+						  &:after {
+						    content: '';
+						    border: .5px solid #ccc;
+						    height: 27px;
+						    margin-left: 10px;
+
+						  }
+
+						}
+						.input-with-icon {
+							flex-shrink: 15;
+							border: none;
+						}
+					  }
+					
+				}
+			}
+		}
+	}
+
+	.greetings-section{
+		.col-sm-6:nth-child(2){
+			background: #9c27b0;
+			font-size:1.2rem;
+		}
+	}
+	.accomplishments-section {
+		img{
+			height: 128px;
+		    border: 1px solid #9c27b0;
+		    border-width: 10px;
+		    border-left-style: hidden;
+		}
+
+		p {
+			font-size: 1.5rem;
+			span{
+				font-size: 2.5rem;
+				color: #9c27b0;
+			}
+		}
+	}
+
+	.clients-section{
+		background: #f0f0f0;
+		.card {
+		  	position: relative;
+		  	max-width: 400px;
+		  	font-family: inherit;
+		  	p{
+		  		font-family: 'Alegreya Sans', sans-serif;
+		  	}
+		    .links{
+		  	    position: absolute;
+    			top: calc(50% - 28px);
+    			right: -28px;
+
+    			.link-button{
+    				background: white;
+    				i{
+    					font-size: 1.5rem;
+    				}
+    			}
+
+    		
+			}
+		}
+	}
+
+
+
+
+}
